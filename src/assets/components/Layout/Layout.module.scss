@@ -6,4 +6,9 @@
   left: 0;
   display: grid;
   grid-template-rows: var(--header-height) 1fr var(--footer-height);
+
+  main {
+    height: 100%;
+    width: 100%;
+  }
 }
