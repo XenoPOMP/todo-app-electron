@@ -12,6 +12,8 @@ header.appFrame {
   -webkit-app-region: drag;
   background: var(--app-back-secondary);
 
+  transition: .15s ease background;
+
   .toHomeButton {
     @extend %flexCenter;
     height: 100%;
@@ -20,11 +22,15 @@ header.appFrame {
     cursor: pointer;
     -webkit-app-region: no-drag;
 
+    transition: .15s ease background;
+
     svg {
       width: 40%;
 
       path {
         fill: var(--frame-icon);
+
+        transition: .15s ease fill;
       }
     }
   }
