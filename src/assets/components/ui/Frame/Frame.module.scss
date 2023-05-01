@@ -1,0 +1,21 @@
+@import "src/assets/styles/templates";
+
+header.appFrame {
+  @extend %notSelectable;
+
+  // width: 100%;
+  width: 100vw;
+  height: 1.5em;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: globalPadding(1);
+  -webkit-app-region: drag;
+
+  .trafficLights {
+    display: flex;
+    height: 100%;
+    -webkit-app-region: no-drag;
+  }
+}

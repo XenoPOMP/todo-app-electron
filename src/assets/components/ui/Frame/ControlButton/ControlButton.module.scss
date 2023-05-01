@@ -1,0 +1,11 @@
+@import "src/assets/styles/templates";
+
+.button {
+  @extend %flexCenter;
+  @extend %notSelectable;
+
+  height: 100%;
+  aspect-ratio: 1.25 / 1;
+  background: red;
+  cursor: pointer;
+}

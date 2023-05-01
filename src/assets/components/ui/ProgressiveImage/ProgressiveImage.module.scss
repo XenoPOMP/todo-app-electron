@@ -1,0 +1,15 @@
+@import "src/assets/styles/templates";
+
+.loader {
+  @extend %flexCenter;
+
+  width: 100%;
+  height: 100%;
+  background: var(--loader-background);
+
+  svg.circleLoader {
+    g path {
+      fill: var(--loader-color);
+    }
+  }
+}

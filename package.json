@@ -1,0 +1,70 @@
+{
+  "name": "electron-vite-template",
+  "version": "1.1.1",
+  "main": "dist-electron/main/index.js",
+  "description": "Electron Vite React boilerplate.",
+  "author": "草鞋没号 <308487730@qq.com>",
+  "license": "MIT",
+  "private": true,
+  "debug": {
+    "env": {
+      "VITE_DEV_SERVER_URL": "http://127.0.0.1:7777/"
+    }
+  },
+  "scripts": {
+    "prebuild": "ts-node electron/prebuild/index.ts",
+    "dev": "yarn prebuild && vite",
+    "build": "yarn prebuild && tsc && vite build && electron-builder",
+    "preview": "yarn prebuild && vite preview",
+    "pree2e": "yarn prebuild && vite build --mode=test",
+    "e2e": "playwright test"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.4.0",
+    "classnames": "^2.3.2",
+    "electron-updater": "^5.3.0",
+    "framer-motion": "^10.12.4",
+    "react-document-meta": "^3.0.0-beta.2",
+    "react-media": "^1.10.0",
+    "react-query": "^3.39.3",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.10.0",
+    "socket.io-client": "^4.6.1",
+    "that-sparks": "^0.1.8",
+    "ts-custom-error": "^3.3.1",
+    "universal-cookie": "^4.0.4",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.32.0",
+    "@testing-library/react": "^14.0.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "@types/node": "^18.16.2",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/socket.io-client": "^3.0.0",
+    "@types/uuid": "^9.0.1",
+    "@vitejs/plugin-react": "^3.1.0",
+    "@vitest/coverage-c8": "^0.30.1",
+    "cross-env": "^7.0.3",
+    "edit-file": "^0.3.0",
+    "electron": "^23.2.0",
+    "electron-builder": "^23.6.0",
+    "jsdom": "^21.1.1",
+    "prettier": "^2.8.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.60.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.1.4",
+    "vite-plugin-electron": "^0.11.2",
+    "vite-plugin-electron-renderer": "^0.14.1",
+    "vite-tsconfig-paths": "^4.2.0",
+    "vitest": "^0.30.1"
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  }
+}

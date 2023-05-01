@@ -1,0 +1,14 @@
+%uiGrid {
+  @extend %uiContainer;
+
+  --cols: 12;
+  --rows: 1;
+  --gap: calc(0.5 * var(--global-padding));
+
+  display: grid;
+  grid-template-columns: repeat(var(--cols), 1fr);
+  grid-template-rows: repeat(var(--rows), 1fr);
+  grid-column-gap: var(--gap);
+  grid-row-gap: var(--gap);
+  gap: var(--gap);
+}

@@ -1,0 +1,17 @@
+@import "src/assets/styles/templates";
+
+.overlay {
+  --blur-amount: 0px;
+
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 20000;
+  backdrop-filter: blur(var(--blur-amount));
+
+  &.flexCenter {
+    @extend %flexCenter;
+  }
+}

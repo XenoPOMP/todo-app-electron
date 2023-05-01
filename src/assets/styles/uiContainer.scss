@@ -1,0 +1,5 @@
+%uiContainer {
+  max-width: var(--ui-container-max-width);
+  margin: 0 auto;
+  width: calc(100% - var(--global-padding) * 2);
+}

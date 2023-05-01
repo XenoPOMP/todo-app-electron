@@ -1,0 +1,29 @@
+.loader {
+  &.threeDots {
+    --dot-width: 8px;
+
+    display: flex;
+    column-gap: calc(var(--dot-width) / 2);
+
+    .dot {
+      width: var(--dot-width);
+      aspect-ratio: 1;
+      background: var(--main-color);
+      border-radius: 50%;
+    }
+  }
+
+  &.verticalLines {
+    --line-height: 20px;
+
+    display: flex;
+    align-items: center;
+    column-gap: calc(var(--line-height) / 5);
+
+    .line {
+      height: var(--line-height);
+      aspect-ratio: 2 / 20;
+      background: var(--main-color);
+    }
+  }
+}
