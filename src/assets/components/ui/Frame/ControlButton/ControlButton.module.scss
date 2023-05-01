@@ -5,7 +5,37 @@
   @extend %notSelectable;
 
   height: 100%;
-  aspect-ratio: 1.25 / 1;
-  background: red;
+  aspect-ratio: 46.67 / 40;
+  background: transparent;
   cursor: pointer;
+
+  transition: .08s ease background;
+
+  svg {
+    width: 32.14%;
+
+    rect, path {
+      fill: var(--frame-icon);
+
+      transition: fill .08s ease;
+    }
+  }
+
+  &:hover {
+    background: var(--frame-traffic-back);
+  }
+
+  &.close {
+    &:hover {
+      background: var(--frame-traffic-back-close);
+
+      svg {
+        width: 32.14%;
+
+        path {
+          fill: var(--frame-traffic-icon-close);
+        }
+      }
+    }
+  }
 }

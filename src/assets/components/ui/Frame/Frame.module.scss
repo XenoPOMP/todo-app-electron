@@ -2,9 +2,7 @@
 
 header.appFrame {
   @extend %notSelectable;
-
-  width: 100%;
-  height: 100%;
+  
   font-size: 20px;
   display: flex;
   justify-content: space-between;
