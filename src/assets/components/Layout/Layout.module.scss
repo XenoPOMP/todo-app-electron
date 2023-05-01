@@ -1,0 +1,9 @@
+.layout {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-rows: var(--header-height) 1fr var(--footer-height);
+}

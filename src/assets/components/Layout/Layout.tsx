@@ -8,10 +8,10 @@ import type { LayoutProps } from './Layout.props';
 
 const Layout: FC<PropsWithChildren<LayoutProps>> = ({ children }) => {
 	return (
-		<>
+		<div className={cn(styles.layout)}>
 			<Frame />
 			{children}
-		</>
+		</div>
 	);
 };
 

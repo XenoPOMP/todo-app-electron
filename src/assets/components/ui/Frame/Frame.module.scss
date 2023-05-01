@@ -3,15 +3,31 @@
 header.appFrame {
   @extend %notSelectable;
 
-  // width: 100%;
-  width: 100vw;
-  height: 1.5em;
+  width: 100%;
+  height: 100%;
   font-size: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: globalPadding(1);
   -webkit-app-region: drag;
+  background: var(--app-back-secondary);
+
+  .toHomeButton {
+    @extend %flexCenter;
+    height: 100%;
+    aspect-ratio: 1;
+    background: var(--app-back-primary);
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+
+    svg {
+      width: 40%;
+
+      path {
+        fill: var(--frame-icon);
+      }
+    }
+  }
 
   .trafficLights {
     display: flex;

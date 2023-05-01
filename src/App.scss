@@ -1,1 +1,6 @@
 @import "src/assets/styles/nullstyles";
+
+body {
+  background: var(--app-back-primary);
+  transition: .15s ease background;
+}

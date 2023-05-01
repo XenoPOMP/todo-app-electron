@@ -1,3 +1,16 @@
 .themes {
-  &.dark {}
+  &.dark {
+    --frame-icon: #FFFFFF;
+    --frame-traffic-back-close: #FF0000;
+    --frame-traffic-icon-close: #FFFFFF;
+    --frame-traffic-back: #1E2430;
+
+    --app-back-primary: #0D1116;
+    --app-back-secondary: #11141B;
+    --app-selection-back: #16213A;
+    --app-checkbox-back: #10A5E8;
+    --app-checkbox-icon: #FFFFFF;
+    --app-font-primary: #FFFFFF;
+    --app-font-secondary: #1E2430;
+  }
 }
