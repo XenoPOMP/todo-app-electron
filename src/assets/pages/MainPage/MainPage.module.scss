@@ -22,6 +22,7 @@
 
     h2 {
       @extend %medium;
+      @extend %notSelectable;
       font-size: 1.2em;
     }
 
