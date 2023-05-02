@@ -1,0 +1,36 @@
+@import "src/assets/styles/templates";
+
+footer.appFooter {
+  @extend %flexCenter;
+
+  width: 100%;
+  justify-content: space-between;
+  background: var(--app-back-secondary);
+
+  .button {
+    @extend %notSelectable;
+    @extend %flexCenter;
+
+    height: 100%;
+    background: transparent;
+    cursor: pointer;
+
+    transition: .08s ease background;
+
+    svg {
+      width: 55%;
+
+      path {
+        fill: var(--frame-icon);
+      }
+    }
+
+    &:hover {
+      background: var(--frame-traffic-back);
+    }
+
+    &.square {
+      aspect-ratio: 1;
+    }
+  }
+}
