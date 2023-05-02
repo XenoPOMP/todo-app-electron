@@ -11,7 +11,7 @@ const ru: Localization = {
 
 	pages: {
 		main: {
-			label: 'Привет мир!',
+			title: 'Список дел',
 		},
 	},
 };

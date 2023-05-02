@@ -1,3 +1,3 @@
 export type MainPageLocales = {
-	label: string;
+	title: string;
 };

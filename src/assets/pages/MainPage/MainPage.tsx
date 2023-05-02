@@ -14,7 +14,9 @@ const MainPage: FC<MainPageProps> = ({}) => {
 	return (
 		<Page meta={loc.meta.mainPage}>
 			<div className={cn(styles.container)}>
-				<div></div>
+				<div className={cn(styles.titleBlock)}>
+					<h2>{loc.pages.main.title}</h2>
+				</div>
 
 				<div className={cn(styles.todoGroup)}></div>
 			</div>

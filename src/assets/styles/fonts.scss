@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'Golos Text';
+  src: url("src/media/fonts/GolosText-VariableFont_wght.ttf");
+}
+
+%medium {
+  font-weight: 500;
+}
+
 %semiBold {
   font-weight: 600;
+}
+
+%mainFont {
+  font-family: 'Golos Text', serif;
 }

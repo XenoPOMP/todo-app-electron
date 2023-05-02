@@ -11,7 +11,7 @@ const en: Localization = {
 
 	pages: {
 		main: {
-			label: 'Hello world!',
+			title: 'To-do list',
 		},
 	},
 };
