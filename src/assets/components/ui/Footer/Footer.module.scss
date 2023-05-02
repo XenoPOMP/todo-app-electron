@@ -2,13 +2,13 @@
 
 footer.appFooter {
   @extend %flexCenter;
+  @extend %notSelectable;
 
   width: 100%;
   justify-content: space-between;
   background: var(--app-back-secondary);
 
   .button {
-    @extend %notSelectable;
     @extend %flexCenter;
 
     height: 100%;
