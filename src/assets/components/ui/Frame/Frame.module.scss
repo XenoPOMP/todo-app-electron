@@ -20,13 +20,15 @@ header.appFrame {
     cursor: pointer;
     -webkit-app-region: no-drag;
 
-    transition: .15s ease background;
+    transition: .08s ease background;
+
+    &:hover {
+      background: var(--app-back-primary);
+    }
 
     &.isHome {
       background: var(--app-back-primary);
     }
-
-    transition: .15s ease background;
 
     svg {
       width: 40%;
