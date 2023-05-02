@@ -11,7 +11,7 @@ export type AppSettings = {
 };
 
 const initialState: AppSettings = {
-	appVersion: '1.1.1',
+	appVersion: '0.0.1',
 	language: 'en',
 	cookiePrefix: 'application',
 };

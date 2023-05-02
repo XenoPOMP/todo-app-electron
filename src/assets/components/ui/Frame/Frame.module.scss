@@ -2,7 +2,7 @@
 
 header.appFrame {
   @extend %notSelectable;
-  
+
   font-size: 20px;
   display: flex;
   justify-content: space-between;
@@ -16,9 +16,15 @@ header.appFrame {
     @extend %flexCenter;
     height: 100%;
     aspect-ratio: 1;
-    background: var(--app-back-primary);
+    background: transparent;
     cursor: pointer;
     -webkit-app-region: no-drag;
+
+    transition: .15s ease background;
+
+    &.isHome {
+      background: var(--app-back-primary);
+    }
 
     transition: .15s ease background;
 
